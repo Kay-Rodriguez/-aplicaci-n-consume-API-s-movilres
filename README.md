@@ -57,3 +57,6 @@ La aplicación tiene dos pestañas principales:
 - **Authentication:** Correo y contraseña habilitados.  
 - **Hosting:** Despliegue web del proyecto (carpeta `www`).  
 <img width="1158" height="428" alt="image" src="https://github.com/user-attachments/assets/a24e8c69-164d-45d7-806b-69b5f8d7a848" />
+
+## ☁️ Video de Tik Tok
+https://vm.tiktok.com/ZMAWBRtF5/
