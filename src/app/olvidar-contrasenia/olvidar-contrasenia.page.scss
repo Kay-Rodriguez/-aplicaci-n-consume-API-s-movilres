@@ -1,0 +1,83 @@
+.recuperar-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.recuperar-title {
+  text-align: center;
+  color: #6a1b9a; /* Morado principal */
+  margin-bottom: 28px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+ion-item {
+  --background: #fff;
+  --background: #513655;
+  border-radius: 10px;
+  margin-bottom: 14px;
+
+}
+
+ion-input {
+  color: #ecc3e5;
+}
+
+ion-button {
+  --border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Botón principal */
+.recuperar-btn,
+ion-button[type="submit"] {
+  margin-top: 20px;
+   font-weight: 600;
+  font-weight: 600;
+ --background: linear-gradient(135deg, #631983, #c533df);
+  --color: #fff;
+  box-shadow: 0 3px 10px rgba(156, 39, 176, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recuperar-btn:hover,
+ion-button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
+}
+
+/* Enlaces */
+.recuperar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.recuperar-links ion-button {
+  --color: #7b1fa2;
+  font-weight: 500;
+}
+
+.success-msg {
+  color: #4caf50;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.error-msg {
+  color: #ff5252;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+

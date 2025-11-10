@@ -1,0 +1,60 @@
+.exitoso-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  }
+
+.exitoso-icon {
+  font-size: 64px;
+  color: #8dfa9f; /* un verde-lila más sutil */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 12px rgba(104, 221, 120, 0.5);
+}
+
+.exitoso-title {
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.exitoso-msg {
+  color: #f3e5f5;
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.exitoso-btn {
+  margin-top: 8px;
+  --background: linear-gradient(135deg, #631983, #c533df);
+  --color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(155, 48, 255, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.exitoso-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 500px) {
+  .exitoso-container {
+    max-width: 100%;
+    padding: 24px 8px 0 8px;
+  }
+  .exitoso-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar ><ion-title>Registro</ion-title></ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="registro-container">
+    <h2 class="registro-title">Registrate</h2>
+    <form (ngSubmit)="registrar()">
+      <ion-item>
+        <ion-label position="floating">correo electrónico</ion-label>
+        <ion-input type="email" required [(ngModel)]="correo" name="correo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" required [(ngModel)]="contrasena" name="contrasena"></ion-input>
+      </ion-item>
+      <ion-button expand="block" type="submit" class="registro-btn">REGISTRO</ion-button>
+    </form>
+    <div *ngIf="error" class="error-msg">{{ error }}</div>
+    <ion-button expand="block" fill="clear" [routerLink]="['/login']">INICIA SESIÓN</ion-button>
+  </div>
+</ion-content>

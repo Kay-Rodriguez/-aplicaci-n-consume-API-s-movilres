@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pagina de Memes</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="logout-btn" (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+        <span class="hide-on-mobile">Salir</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Memes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-button expand="block" (click)="setRandomMemes()" [disabled]="loading">Otros memes</ion-button>
+
+  <ion-spinner *ngIf="loading" name="crescent" style="display:block; margin: 40px auto;"></ion-spinner>
+
+  <ion-grid *ngIf="!loading">
+    <ion-row>
+      <ion-col size="6" *ngFor="let meme of memes">
+        <ion-card>
+          <img [src]="meme.url" alt="Meme" class="meme-img" />
+          <ion-card-header>
+            <ion-card-title>{{ meme.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-content>

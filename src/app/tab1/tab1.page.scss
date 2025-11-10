@@ -1,0 +1,189 @@
+ion-header {
+  --background: linear-gradient(90deg, #6a0dad, #9b30ff);
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(155, 48, 255, 0.3);
+}
+
+ion-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  background: #ff3b30;
+  border-radius: 10px;
+  padding: 4px 10px;
+  color: #fff;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 59, 48, 0.4);
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.hide-on-mobile {
+  margin-left: 4px;
+}
+
+ion-content {
+  --background: radial-gradient(circle at top left, #6a0dad, #2a004f);
+}
+
+ion-button {
+  margin: 16px auto;
+  width: 90%;
+  --background: #9b30ff;
+  --background-hover: #7a1dcc;
+  --background-activated: #6a0dad;
+  --color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(155, 48, 255, 0.3);
+  transition: transform 0.2s ease;
+}
+
+ion-button:hover {
+  transform: translateY(-2px);
+}
+
+.meme-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(155, 48, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meme-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(155, 48, 255, 0.4);
+}
+
+ion-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+ion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(155, 48, 255, 0.2);
+}
+
+ion-card-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+ion-spinner {
+  --color: #b388ff;
+}
+
+ion-header {
+  --background: linear-gradient(90deg, #6a0dad, #9b30ff);
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(155, 48, 255, 0.3);
+}
+
+ion-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  background: #ff3b30;
+  border-radius: 10px;
+  padding: 4px 10px;
+  color: #fff;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 59, 48, 0.4);
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.hide-on-mobile {
+  margin-left: 4px;
+}
+
+ion-content {
+  --background: radial-gradient(circle at top left, #c5a2dd, #2a004f);
+}
+
+ion-button {
+  margin: 16px auto;
+  width: 90%;
+  --background: linear-gradient(135deg, #631983, #c533df);
+  --color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(155, 48, 255, 0.3);
+  transition: transform 0.2s ease;
+}
+
+ion-button:hover {
+  transform: translateY(-2px);
+}
+
+.meme-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(155, 48, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meme-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(155, 48, 255, 0.4);
+}
+
+ion-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+ion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(155, 48, 255, 0.2);
+}
+
+ion-card-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+ion-spinner {
+  --color: #b388ff;
+}
+
+@media (max-width: 600px) {
+  ion-col {
+    padding: 4px 2px;
+  }
+  .meme-img {
+    border-radius: 8px;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Chistes y Gatitos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="logout-btn" (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+        <span class="hide-on-mobile">Salir</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-spinner *ngIf="loading" name="crescent" style="display:block; margin: 40px auto;"></ion-spinner>
+<ion-button expand="block" (click)="getJokesAndCats()" [disabled]="loading">
+   mas gatitos y chistes
+  </ion-button>
+  <ion-grid *ngIf="!loading">
+    <ion-row>
+      <ion-col size="6" *ngFor="let joke of jokes; let i = index">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Chiste {{ i + 1 }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div *ngIf="joke.type === 'single'">{{ joke.joke }}</div>
+            <div *ngIf="joke.type === 'twopart'">
+              <b>{{ joke.setup }}</b><br />
+              {{ joke.delivery }}
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" *ngFor="let cat of cats">
+        <ion-card>
+          <img [src]="cat.url" alt="Gato" class="meme-img" />
+          <ion-card-title>🐾 Gatito</ion-card-title>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+</ion-content>
