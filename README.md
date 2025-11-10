@@ -4,7 +4,7 @@
 - 👩‍💻 Karla Rodríguez y Alisson Viracocha
 ---
 
-## 🚀 Descripción General
+## Descripción General
 
 Esta aplicación fue desarrollada en **Ionic + Angular** y permite **consumir múltiples APIs REST** de forma combinada o por separado.  
 Además, incluye un **sistema de autenticación completo con Firebase** (registro, login, verificación de correo y recuperación de contraseña)  
@@ -16,17 +16,23 @@ https://login-auth-f1b3e.web.app
 
 ## 🧩 Funcionalidades Principales
 
-### 🔐 Autenticación con Firebase
+###  Autenticación con Firebase
 - Registro de usuarios con correo y contraseña.
   <img width="717" height="484" alt="image" src="https://github.com/user-attachments/assets/b95891b0-2311-4a68-a054-b30646516ac8" />
+  
 - Verificación de cuenta por correo electrónico.
+  
    <img width="282" height="380" alt="image" src="https://github.com/user-attachments/assets/3438f348-9e10-4b77-b832-2809d2105ac7" />
+   
 - Recuperación de contraseña mediante enlace.
+  
 <img width="484" height="351" alt="image" src="https://github.com/user-attachments/assets/5af74f3a-66a5-4157-be8a-a935017a826d" />
-- Logout seguro.  
+
+- Logout seguro.
+  
 <img width="1342" height="527" alt="image" src="https://github.com/user-attachments/assets/d223f889-6ae4-4edd-9936-a1aa9f6097e2" />
 
-### 🎭 Consumo de APIs (Tabs principales)
+###  Consumo de APIs (Tabs principales)
 La aplicación tiene dos pestañas principales:
 
 #### 🧠 Tab 1 — *Memes*
